@@ -43,5 +43,14 @@ block content
 						span.menu--ellipsis
 				.logo
 			
-			.main--content.col.m6
-				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quod natus at soluta explicabo doloremque aliquid, earum vitae laborum molestias quam harum molestiae consequuntur! Ea excepturi minima quo possimus ducimus.
+			.main--content.col.m6.s12.l8
+				.container
+					.commitment--add
+						a.dropdown-button.btn(href="#" data-activates="add-commitment") PH
+							ul#add-commitment.dropdown-content
+								li one
+								li two
+						textarea.autoExpand.commitment--item(rows='1' data-min-rows='1' placeholder="Add new commitment")
+
+					.commitment--list
+						.commitment--item
