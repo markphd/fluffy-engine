@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>profile-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Edit-commitment" transform="translate(-505.000000, -265.000000)" stroke="#929292" stroke-width="2">
+            <path d="M512.500312,275 C509.282025,275 506.58399,276.942804 506.007588,279.634976 C505.978241,279.772157 506.033,279.859758 505.956888,279.856332 C510.240228,280.047889 514.759772,280.047889 519.042822,279.856345 C518.967,279.859758 519.021759,279.772157 518.992446,279.635136 C518.416024,276.94287 515.718056,275 512.500312,275 Z M515,268.5 C515,267.1193 513.880597,266 512.5,266 C511.119403,266 510,267.1193 510,268.5 C510,269.8807 511.119403,271 512.5,271 C513.880597,271 515,269.8807 515,268.5 Z" id="profile-icon"></path>
+        </g>
+    </g>
+</svg>

@@ -2,7 +2,6 @@ $( document ).ready(function() {
     $("#menu--sidebar").sideNav();
 });
 
-
 $( document ).on('focus.autoExpand', 'textarea.autoExpand', function(){
     var savedValue = this.value;
     this.value = '';
