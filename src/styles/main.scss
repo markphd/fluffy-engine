@@ -238,7 +238,7 @@ section.col.s12.m12 {
 }
 
 .commitment--add {
-  margin-top: 75px;
+  margin-top: 25px;
   margin-bottom: 67px;
   position: relative;
 }
@@ -422,9 +422,41 @@ a[data-activates="add-commitment"]::after {
   }
 }
 
+.open--menu {
+    // padding-left: 300px;
+    transform: translateX(300px);
+    transition: transform 0.2s;
+  }
+
+  .close--menu {
+    // padding-left: 0;
+    transform: translateX(1px);
+    transition: transform 0.2s;
+  }
+
+@media #{$medium-and-down} {
+
+}
+
 @media #{$medium-and-up} {
   #menu--sidebar {
     max-width: 300px;
+  }
+  .main--content {
+
+    padding-left: 300px;
+  }
+
+  .open--menu {
+    // padding-left: 300px;
+    transform: translateX(-100%);
+    transition: padding 0.2s;
+  }
+
+  .close--menu {
+    // padding-left: 0;
+    transform: translateX(100%);
+    transition: padding 0.2s;
   }
 }
 

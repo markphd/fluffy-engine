@@ -1,5 +1,12 @@
 $( document ).ready(function() {
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({
+        onOpen: function(el) {
+          $('.main--content').removeClass("close--menu").addClass("open--menu");
+        },
+        onClose: function(el) {
+          $('.main--content').removeClass("open--menu").addClass("close--menu");
+        }
+    });
 });
 
 $( document ).on('focus.autoExpand', 'textarea.autoExpand', function(){
