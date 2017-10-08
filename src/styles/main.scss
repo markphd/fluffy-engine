@@ -379,6 +379,7 @@ a[data-activates="add-commitment"]::after {
 .assignment--item {
   position: relative;
   margin-bottom: 30px;
+  max-width: 600px;
 }
 
 .assignment--owner {
@@ -407,7 +408,7 @@ a[data-activates="add-commitment"]::after {
 .delete--action {
   font-size: 14px;
   position: absolute;
-  right: 150px;
+  right: 0;
   top: 0;
   color: #E7E7E7;
   cursor: pointer;
