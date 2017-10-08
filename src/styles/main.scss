@@ -213,13 +213,16 @@ span.counter {
 .logo {
   width: 102px;
   height: 34px;
-  background-image: url('../images/Logo.svg');
+  // background-image: url('../images/Logo.svg');
+  background-image: url('../images/Logo@2x.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   display: block;
   margin-top: 120px;
   margin-left: 25px;
+  position: absolute;
+  bottom: 50px;
 }
 
 
