@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $("#menu--sidebar").sideNav();
+    $(".button-collapse").sideNav();
 });
 
 $( document ).on('focus.autoExpand', 'textarea.autoExpand', function(){
