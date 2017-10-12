@@ -532,6 +532,20 @@ a[data-activates="menu--sidebar"] {
   cursor: pointer;
 }
 
+.ask--status {
+  margin-top: 5px;
+  color: #CCC5C5; 
+  font-size: 11px;  
+  line-height: 15px;  
+  text-align: center;
+  margin-left: -10px;
+  display: inline-block;
+}
+
+.ask--list.outgoing .ask--user {
+  
+}
+
 @media #{$medium-and-down} {
   textarea.commitment--item, .commitment--add {
     margin-bottom: 30px;
