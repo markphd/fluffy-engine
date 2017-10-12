@@ -471,9 +471,9 @@ a[data-activates="menu--sidebar"] {
 }
 
 .ask--item {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #F0F0F0;
   max-width: 565px;
 }
 
@@ -522,6 +522,14 @@ a[data-activates="menu--sidebar"] {
   text-align: center;
   font-weight: bold;
   margin-left: 10px;
+}
+
+.ask--modify {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #AEAEAE; 
+  line-height: 30px;
+  cursor: pointer;
 }
 
 @media #{$medium-and-down} {
