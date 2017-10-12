@@ -1,0 +1,109 @@
+extends layout/master.jade
+
+block header
+
+block content
+	.row.full--page
+		section.col.s12.m12
+			a.show-on-medium-and-down.button-collapse.show-on-large(href="#" data-activates="menu--sidebar")
+			#menu--sidebar.col.m6.l4.s10.side-nav.fixed
+				.user--control
+					.user--details
+						.user--avatar
+						p Elva Bradley
+						span.user--menu-control
+				.channel--select
+					.channel--list
+						.channel--item
+							a(href="#") /commitments
+							span.counter 8
+						.channel--item
+							a(href="#") /asks
+							span.counter 2
+
+				section.category--items
+					header.category--title
+						p Teams
+						span.add--badge
+					.category--item
+						p Dhamira
+						span.menu--ellipsis
+					.category--item
+						p MonkeyPLanes
+						span.menu--ellipsis
+
+				section.category--items
+					header.category--title
+						p Integrations
+						span.add--badge
+					.category--item
+						p Gmail
+						span.menu--ellipsis
+					.category--item
+						p Calendar
+						span.menu--ellipsis
+				.logo
+			
+			.main--content
+				.container
+					.commitment--add
+						a.dropdown-button.btn(href="#" data-activates="add-commitment" data-beloworigin="true") PH
+							ul#add-commitment.dropdown-content
+								li.commitment--group one
+								li.commitment--group two
+						textarea.autoExpand.commitment--item(rows='1' data-min-rows='1' placeholder="Add new ask")
+
+					.section--heading INCOMING
+
+					.commitment--list
+						.commitment--item
+							.commitment--action
+								a.commitment--complete(href="#")
+									i.medium.material-icons check
+							.commitment--deadline.commitment--deadline-red One hour from now
+							.commitment--title Try to write a commitment that will entend to two lines
+							.commitment--members
+								span.commitment--member-group PH
+								span.commitment--member.user-1
+								span.commitment--member.user-2
+								span.commitment--member.user-3
+
+						.commitment--item
+							.commitment--action
+								a.commitment--complete(href="#")
+									i.medium.material-icons check
+							.commitment--deadline.commitment--deadline-yellow One hour from now
+							.commitment--title Try to write a commitment that will entend to two lines
+							.commitment--members
+								span.commitment--member-group PH
+								span.commitment--member.user-1
+
+						.commitment--item
+							.commitment--action
+								a.commitment--complete(href="#")
+									i.medium.material-icons check
+
+							.commitment--title Try to write a commitment that will entend to two lines
+							.commitment--members
+								span.commitment--member-group PH
+								span.commitment--member.user-1
+					
+					.section--heading MADE TO ME
+
+					.assignment--list
+						.assignment--item
+							.assignment--owner.user-3
+							.assignment--operator
+								span.operator--name Kyle 
+								|committed to:
+							.commitment--title Find an intern for the summer
+							.assignment--time 1 hr ago
+							.delete--action Delete
+						.assignment--item
+							.assignment--owner.user-1
+							.assignment--operator
+								span.operator--name Aaron  
+								|committed to:
+							.commitment--title Update user story for Asks by this Friday, June 14th
+							.assignment--time 1 hr ago
+							.delete--action Delete
