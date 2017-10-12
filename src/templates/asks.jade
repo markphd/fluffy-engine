@@ -15,7 +15,7 @@ block content
 				.channel--select
 					.channel--list
 						.channel--item
-							a(href="#") /commitments
+							a(href="/commitment.html") /commitments
 							span.counter 8
 						.channel--item
 							a(href="#") /asks
@@ -55,55 +55,33 @@ block content
 
 					.section--heading INCOMING
 
-					.commitment--list
-						.commitment--item
-							.commitment--action
-								a.commitment--complete(href="#")
-									i.medium.material-icons check
-							.commitment--deadline.commitment--deadline-red One hour from now
-							.commitment--title Try to write a commitment that will entend to two lines
-							.commitment--members
-								span.commitment--member-group PH
+					.ask--list
+						.ask--item
+							.ask--user
 								span.commitment--member.user-1
-								span.commitment--member.user-2
+								span.ask--badge.new.badge
+							.ask--intro
+								i.em.em-pray
+								span.operator--name Aaron 
+								|asked if you could:
+							.ask--title Complete expense reports by Friday, June 14th
+							.assignment--time 1 hr ago
+							.ask--control
+								a.ask--accept.waves-effect.waves-light.btn Accept
+								a.ask--decline.waves-effect.waves-light.btn Decline
+								a.ask--modify Modify
+						.ask--item
+							.ask--user
 								span.commitment--member.user-3
+							.ask--intro
+								i.em.em-pray
+								span.operator--name Frank 
+								|asked if you could:
+							.ask--title Complete expense reports by Friday, June 14th
+							.assignment--time 1 hr ago
+							.ask--control
+								a.ask--accept.waves-effect.waves-light.btn Accept
+								a.ask--decline.waves-effect.waves-light.btn Decline
+								a.ask--modify Modify
 
-						.commitment--item
-							.commitment--action
-								a.commitment--complete(href="#")
-									i.medium.material-icons check
-							.commitment--deadline.commitment--deadline-yellow One hour from now
-							.commitment--title Try to write a commitment that will entend to two lines
-							.commitment--members
-								span.commitment--member-group PH
-								span.commitment--member.user-1
-
-						.commitment--item
-							.commitment--action
-								a.commitment--complete(href="#")
-									i.medium.material-icons check
-
-							.commitment--title Try to write a commitment that will entend to two lines
-							.commitment--members
-								span.commitment--member-group PH
-								span.commitment--member.user-1
-					
 					.section--heading MADE TO ME
-
-					.assignment--list
-						.assignment--item
-							.assignment--owner.user-3
-							.assignment--operator
-								span.operator--name Kyle 
-								|committed to:
-							.commitment--title Find an intern for the summer
-							.assignment--time 1 hr ago
-							.delete--action Delete
-						.assignment--item
-							.assignment--owner.user-1
-							.assignment--operator
-								span.operator--name Aaron  
-								|committed to:
-							.commitment--title Update user story for Asks by this Friday, June 14th
-							.assignment--time 1 hr ago
-							.delete--action Delete

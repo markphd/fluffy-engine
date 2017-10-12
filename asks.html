@@ -5,6 +5,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" rel="stylesheet"/>
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="dist/css/main.css" rel="stylesheet"/>
+    <link href="dist/css/emoji.css" rel="stylesheet"/>
   </head>
   <body>
     <div class="row full--page">
@@ -18,7 +19,7 @@
           </div>
           <div class="channel--select">
             <div class="channel--list">
-              <div class="channel--item"><a href="#">/commitments</a><span class="counter">8</span></div>
+              <div class="channel--item"><a href="/commitment.html">/commitments</a><span class="counter">8</span></div>
               <div class="channel--item"><a href="#">/asks</a><span class="counter">2</span></div>
             </div>
           </div>
@@ -56,42 +57,23 @@
               <textarea class="autoExpand commitment--item" rows="1" data-min-rows="1" placeholder="Add new ask"></textarea>
             </div>
             <div class="section--heading">INCOMING</div>
-            <div class="commitment--list">
-              <div class="commitment--item">
-                <div class="commitment--action"><a class="commitment--complete" href="#"><i class="medium material-icons">check</i></a></div>
-                <div class="commitment--deadline commitment--deadline-red">One hour from now</div>
-                <div class="commitment--title">Try to write a commitment that will entend to two lines</div>
-                <div class="commitment--members"><span class="commitment--member-group">PH</span><span class="commitment--member user-1"></span><span class="commitment--member user-2"></span><span class="commitment--member user-3"></span></div>
+            <div class="ask--list">
+              <div class="ask--item">
+                <div class="ask--user"><span class="commitment--member user-1"></span><span class="ask--badge new badge"></span></div>
+                <div class="ask--intro"><i class="em em-pray"></i><span class="operator--name">Aaron </span>asked if you could:</div>
+                <div class="ask--title">Complete expense reports by Friday, June 14th</div>
+                <div class="assignment--time">1 hr ago</div>
+                <div class="ask--control"><a class="ask--accept waves-effect waves-light btn">Accept</a><a class="ask--decline waves-effect waves-light btn">Decline</a><a class="ask--modify">Modify</a></div>
               </div>
-              <div class="commitment--item">
-                <div class="commitment--action"><a class="commitment--complete" href="#"><i class="medium material-icons">check</i></a></div>
-                <div class="commitment--deadline commitment--deadline-yellow">One hour from now</div>
-                <div class="commitment--title">Try to write a commitment that will entend to two lines</div>
-                <div class="commitment--members"><span class="commitment--member-group">PH</span><span class="commitment--member user-1"></span></div>
-              </div>
-              <div class="commitment--item">
-                <div class="commitment--action"><a class="commitment--complete" href="#"><i class="medium material-icons">check</i></a></div>
-                <div class="commitment--title">Try to write a commitment that will entend to two lines</div>
-                <div class="commitment--members"><span class="commitment--member-group">PH</span><span class="commitment--member user-1"></span></div>
+              <div class="ask--item">
+                <div class="ask--user"><span class="commitment--member user-3"></span></div>
+                <div class="ask--intro"><i class="em em-pray"></i><span class="operator--name">Frank </span>asked if you could:</div>
+                <div class="ask--title">Complete expense reports by Friday, June 14th</div>
+                <div class="assignment--time">1 hr ago</div>
+                <div class="ask--control"><a class="ask--accept waves-effect waves-light btn">Accept</a><a class="ask--decline waves-effect waves-light btn">Decline</a><a class="ask--modify">Modify</a></div>
               </div>
             </div>
             <div class="section--heading">MADE TO ME</div>
-            <div class="assignment--list">
-              <div class="assignment--item">
-                <div class="assignment--owner user-3"></div>
-                <div class="assignment--operator"><span class="operator--name">Kyle </span>committed to:</div>
-                <div class="commitment--title">Find an intern for the summer</div>
-                <div class="assignment--time">1 hr ago</div>
-                <div class="delete--action">Delete</div>
-              </div>
-              <div class="assignment--item">
-                <div class="assignment--owner user-1"></div>
-                <div class="assignment--operator"><span class="operator--name">Aaron  </span>committed to:</div>
-                <div class="commitment--title">Update user story for Asks by this Friday, June 14th</div>
-                <div class="assignment--time">1 hr ago</div>
-                <div class="delete--action">Delete</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
