@@ -386,7 +386,7 @@ a[data-activates="menu--sidebar"] {
 .assignment--item {
   position: relative;
   margin-bottom: 30px;
-  max-width: 600px;
+  max-width: 620px;
 }
 
 .assignment--owner {
@@ -440,12 +440,17 @@ a[data-activates="menu--sidebar"] {
     transition: transform 0.2s;
   }
 
+.ask--list.outgoing .ask--user {
+  height: 60px;
+}
+
 .ask--user {
   height: 150px;
   width: 50px;
   float: left;
   padding-left: 15px;
   margin-right: 20px;
+  position: relative;
 }
 
 .ask--user span.commitment--member {
@@ -474,7 +479,8 @@ a[data-activates="menu--sidebar"] {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #F0F0F0;
-  max-width: 565px;
+  max-width: 620px;
+  position: relative;
 }
 
 .ask--intro {
@@ -548,6 +554,24 @@ a[data-activates="menu--sidebar"] {
   position: absolute;
   bottom: 15px;
   right: 2px;
+}
+
+.ask--controls {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.ask--control-edit, .ask--control-delete {
+  float: left;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #D6D6D6;
+} 
+
+.ask--control-edit {
+  font-weight: 600;
 }
 
 @media #{$medium-and-down} {
