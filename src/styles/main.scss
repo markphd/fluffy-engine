@@ -540,10 +540,14 @@ a[data-activates="menu--sidebar"] {
   text-align: center;
   margin-left: -10px;
   display: inline-block;
+  position: relative;
 }
 
-.ask--list.outgoing .ask--user {
-  
+.ask--status i {
+  float: right;
+  position: absolute;
+  bottom: 15px;
+  right: 2px;
 }
 
 @media #{$medium-and-down} {
