@@ -750,14 +750,15 @@ svg.label--range, svg.label--group {
     border: none;
   }
 
-  input.edit--title, input.edit--date,
-  input.edit--time, .edit--range, .edit--group {
-    width: 80%;
-  }
+  // input.edit--title, input.edit--date,
+  // input.edit--time, .edit--assignee, .edit--range, .edit--group {
+  //   width: 90%;
+  // }
 
-  input.edit--time {
-    clear: both;
-  }
+  // input.edit--date {
+  //   width: 90%;
+  //   float: left;
+  // }
 }
 
 @media #{$large-and-up} {
