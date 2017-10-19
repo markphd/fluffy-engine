@@ -7,6 +7,8 @@ $( document ).ready(function() {
           $('.main--content').removeClass("open--menu").addClass("close--menu");
         }
     });
+
+    $('select').material_select();
 });
 
 $( document ).on('focus.autoExpand', 'textarea.autoExpand', function(){

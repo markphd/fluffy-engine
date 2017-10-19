@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width"/>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" rel="stylesheet"/>
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="dist/css/materialize.min.css" rel="stylesheet"/>
     <link href="dist/css/main.css" rel="stylesheet"/>
     <link href="dist/css/emoji.css" rel="stylesheet"/>
   </head>
   <body>
     <div class="row full--page">
-      <section class="col s12 m12"><a class="show-on-medium-and-down button-collapse show-on-large" href="#" data-activates="menu--sidebar"></a>
-        <div class="col m6 l4 s10 side-nav fixed" id="menu--sidebar">
+      <section class="col s12 m12">
+        <div class="side-nav fixed" id="menu--sidebar">
           <div class="user--control">
             <div class="user--details">
               <div class="user--avatar"></div>
@@ -20,36 +20,39 @@
           <div class="channel--select">
             <div class="channel--list">
               <div class="channel--item"><a href="/commitment.html">/commitments</a><span class="counter">8</span></div>
-              <div class="channel--item"><a href="#">/asks</a><span class="counter">2</span></div>
+              <div class="channel--item"><a href="/asks.html">/asks</a><span class="counter">2</span></div>
             </div>
           </div>
-          <section class="category--items">
-            <header class="category--title">
+          <div class="channel--select">
+            <header class="category--title"> 
               <p>Teams</p><span class="add--badge"></span>
             </header>
-            <div class="category--item">
-              <p>Dhamira</p><span class="menu--ellipsis"></span>
+            <div class="channel--list">
+              <div class="channel--item"><a href="#">Dhamira</a><span class="menu--ellipsis"></span></div>
             </div>
-            <div class="category--item">
-              <p>MonkeyPLanes</p><span class="menu--ellipsis"></span>
+            <div class="channel--list">
+              <div class="channel--item"><a href="#">Monkey Planes</a><span class="menu--ellipsis"></span></div>
             </div>
-          </section>
-          <section class="category--items">
-            <header class="category--title">
+          </div>
+          <div class="channel--select">
+            <header class="category--title"> 
               <p>Integrations</p><span class="add--badge"></span>
             </header>
-            <div class="category--item">
-              <p>Gmail</p><span class="menu--ellipsis"></span>
+            <div class="channel--list">
+              <div class="channel--item"><a href="#">Gmail</a><span class="menu--ellipsis"></span></div>
             </div>
-            <div class="category--item">
-              <p>Calendar</p><span class="menu--ellipsis"></span>
+            <div class="channel--list">
+              <div class="channel--item"><a href="#">Calendar</a><span class="menu--ellipsis"></span></div>
             </div>
-          </section>
+          </div>
           <div class="logo"></div>
         </div>
         <div class="main--content">
+          <div class="mobile--header hide-on-large-only"><a class="button-collapse show-on-medium-and-down hide-on-large-only" href="#" data-activates="menu--sidebar"></a>
+            <div class="mobile--heading center show-on-medium-and-down hide-on-large-only">/asks</div><a class="show-on-small-and-down hide-on-large-only btn-floating btn-large waves-effect waves-light" id="add--badge"><i class="material-icons">add</i></a>
+          </div>
           <div class="container">
-            <div class="commitment--add"><a class="dropdown-button btn" href="#" data-activates="add-commitment" data-beloworigin="true">PH
+            <div class="commitment--add hide-on-med-and-down"><a class="dropdown-button btn" href="#" data-activates="add-commitment" data-beloworigin="true">PH
                 <ul class="dropdown-content" id="add-commitment">
                   <li class="commitment--group">one</li>
                   <li class="commitment--group">two</li>
@@ -74,20 +77,26 @@
               </div>
             </div>
             <div class="section--heading">OUTGOING</div>
-            <div class="ask--list">
+            <div class="ask--list outgoing">
               <div class="ask--item">
-                <div class="ask--user"><span class="commitment--member user-1"></span><span class="ask--status">pending</span></div>
+                <div class="ask--user"><span class="commitment--member user-1"></span><span class="ask--status">pending<i class="em em-clock1"></i></span></div>
+                <div class="ask--controls"> 
+                  <div class="ask--control-edit">Edit</div>
+                  <div class="ask--control-delete">Delete</div>
+                </div>
                 <div class="ask--intro">You asked <span class="operator--name">Kyle  </span>to:</div>
                 <div class="ask--title">Find an intern for the summer</div>
                 <div class="assignment--time">1 hr ago</div>
-                <div class="ask--control"><a class="ask--accept waves-effect waves-light btn">Accept</a><a class="ask--decline waves-effect waves-light btn">Decline</a><a class="ask--modify">Modify</a></div>
               </div>
               <div class="ask--item">
-                <div class="ask--user"><span class="commitment--member user-3"></span><span class="ask--status">pending</span></div>
+                <div class="ask--user"><span class="commitment--member user-3"></span><span class="ask--status">pending<i class="em em-clock1"></i></span></div>
+                <div class="ask--controls"> 
+                  <div class="ask--control-edit">Edit</div>
+                  <div class="ask--control-delete">Delete</div>
+                </div>
                 <div class="ask--intro">You asked <span class="operator--name">Aaron   </span>to:</div>
                 <div class="ask--title">Update user story for Asks by this Friday, June 14th</div>
                 <div class="assignment--time">1 hr ago</div>
-                <div class="ask--control"><a class="ask--accept waves-effect waves-light btn">Accept</a><a class="ask--decline waves-effect waves-light btn">Decline</a><a class="ask--modify">Modify</a></div>
               </div>
             </div>
           </div>

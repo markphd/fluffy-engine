@@ -5,8 +5,7 @@ block header
 block content
 	.row.full--page
 		section.col.s12.m12
-			a.show-on-medium-and-down.button-collapse.show-on-large(href="#" data-activates="menu--sidebar")
-			#menu--sidebar.col.m6.l4.s10.side-nav.fixed
+			#menu--sidebar.col.m4.l4.s10.side-nav.fixed
 				.user--control
 					.user--details
 						.user--avatar
@@ -15,93 +14,92 @@ block content
 				.channel--select
 					.channel--list
 						.channel--item
-							a(href="#") /commitments
+							a(href="/commitment.html") /commitments
 							span.counter 8
 						.channel--item
-							a(href="#") /asks
+							a(href="/asks.html") /asks
 							span.counter 2
-
-				section.category--items
-					header.category--title
+				
+				.channel--select
+					header.category--title 
 						p Teams
 						span.add--badge
-					.category--item
-						p Dhamira
-						span.menu--ellipsis
-					.category--item
-						p MonkeyPLanes
-						span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Dhamira
+							span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Monkey Planes
+							span.menu--ellipsis
 
-				section.category--items
-					header.category--title
+				.channel--select
+					header.category--title 
 						p Integrations
 						span.add--badge
-					.category--item
-						p Gmail
-						span.menu--ellipsis
-					.category--item
-						p Calendar
-						span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Gmail
+							span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Calendar
+							span.menu--ellipsis
 				.logo
 			
 			.main--content
+				.mobile--header.hide-on-large-only
+					a.button-collapse.show-on-medium-and-down.hide-on-large-only(href="#" data-activates="menu--sidebar")
+
 				.container
-					.commitment--add
-						a.dropdown-button.btn(href="#" data-activates="add-commitment" data-beloworigin="true") PH
-							ul#add-commitment.dropdown-content
-								li.commitment--group one
-								li.commitment--group two
-						textarea.autoExpand.commitment--item(rows='1' data-min-rows='1' placeholder="Add new commitment")
+					.section--heading.show-on-large Edit commitment
 
-					.commitment--list
-						.commitment--item
-							.commitment--action
-								a.commitment--complete(href="#")
-									i.medium.material-icons check
-							.commitment--deadline.commitment--deadline-red One hour from now
-							.commitment--title Try to write a commitment that will entend to two lines
-							.commitment--members
-								span.commitment--member-group PH
-								span.commitment--member.user-1
-								span.commitment--member.user-2
-								span.commitment--member.user-3
+					.commitment--edit-form
+						.commitment--input
+							svg(width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg")
+								title Tt
+								path(d="M5.93 13H4.148V1.822H.062V.256h9.954v1.566H5.93V13zm9.864-7.146h-2.268V10.3c0 .516.096.885.288 1.107.192.222.498.333.918.333.156 0 .324-.018.504-.054.18-.036.342-.09.486-.162l.054 1.386a4.105 4.105 0 0 1-.675.171 4.54 4.54 0 0 1-.765.063c-.804 0-1.419-.222-1.845-.666-.426-.444-.639-1.11-.639-1.998V5.854h-1.638V4.468h1.638V2.02h1.674v2.448h2.268v1.386z" fill="#929292" fill-rule="evenodd")
+							input.edit--title(type="text")
+						.commitment--input
+							svg(width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg")
+								g(transform="translate(1 1)" stroke-width="2" fill="none" fill-rule="evenodd")
+									circle(stroke="#929292" cx="9" cy="9" r="4")
+									path(d="M1 9H0m4.015-6.257l-.63-.777M10.78 1.2l.225-.974m5.205 5.305l.899-.438m-.9 7.376l.9.438M10.779 16.8l.225.974m-6.989-2.517l-.63.777" stroke="#979797" stroke-linecap="round")
+							input.edit--date(type="date")
+							svg(width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+								title Time
+								g(transform="translate(1 1)" stroke="#929292" stroke-width="2" fill="none" fill-rule="evenodd")
+									circle(cx="7" cy="7" r="7")
+									path(stroke-linecap="round" stroke-linejoin="round" d="M7 5v2.857L8.5 9.5")
+							input.edit--time(type="number")
+						.commitment--input
+							svg(width="15" height="16" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg")
+								path(d="M7.5 10c-3.218 0-5.916 1.943-6.492 4.635-.03.137.025.225-.051.221 4.283.192 8.803.192 13.086 0-.076.004-.021-.084-.05-.22C13.415 11.942 10.717 10 7.5 10zM10 3.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z" stroke="#929292" stroke-width="2" fill="none" fill-rule="evenodd")
+							.edit--assignee
+								.chip
+									img(src="dist/images/user-01.jpg")
+									| Kyle Robinson
+						.commitment--input
+							svg.label--range(width="19" height="14" viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg")
+								path(d="M1 10c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1H1zM18 0h-3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V1c0-.55-.45-1-1-1zM8 6c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H8z" fill="#929292" fill-rule="evenodd")
+							.edit--range.input-field
+								select
+									option(value="x") Minutes
+									option(value="x") Hours
+									option(value="x") Days
+						.commitment--input
+							svg.label--group(width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg")
+								title Tt
+								path(d="M5.93 13H4.148V1.822H.062V.256h9.954v1.566H5.93V13zm9.864-7.146h-2.268V10.3c0 .516.096.885.288 1.107.192.222.498.333.918.333.156 0 .324-.018.504-.054.18-.036.342-.09.486-.162l.054 1.386a4.105 4.105 0 0 1-.675.171 4.54 4.54 0 0 1-.765.063c-.804 0-1.419-.222-1.845-.666-.426-.444-.639-1.11-.639-1.998V5.854h-1.638V4.468h1.638V2.02h1.674v2.448h2.268v1.386z" fill="#929292" fill-rule="evenodd")
+							.edit--group.input-field
+								select
+									option(value="x") Project Hackers
+									option(value="x") Google dev team
+									option(value="x") Apple design
+									option(value="x") Evron
+					.edit--controls 
+							.edit--control-cancel Cancel
+							.edit--control-save Save
 
-						.commitment--item
-							.commitment--action
-								a.commitment--complete(href="#")
-									i.medium.material-icons check
-							.commitment--deadline.commitment--deadline-yellow One hour from now
-							.commitment--title Try to write a commitment that will entend to two lines
-							.commitment--members
-								span.commitment--member-group PH
-								span.commitment--member.user-1
 
-						.commitment--item
-							.commitment--action
-								a.commitment--complete(href="#")
-									i.medium.material-icons check
 
-							.commitment--title Try to write a commitment that will entend to two lines
-							.commitment--members
-								span.commitment--member-group PH
-								span.commitment--member.user-1
-					
-					.section--heading MADE TO ME
-
-					.assignment--list
-						.assignment--item
-							.assignment--owner.user-3
-							.assignment--operator
-								span.operator--name Kyle 
-								|committed to:
-							.commitment--title Find an intern for the summer
-							.assignment--time 1 hr ago
-							.delete--action Delete
-						.assignment--item
-							.assignment--owner.user-1
-							.assignment--operator
-								span.operator--name Aaron  
-								|committed to:
-							.commitment--title Update user story for Asks by this Friday, June 14th
-							.assignment--time 1 hr ago
-							.delete--action Delete

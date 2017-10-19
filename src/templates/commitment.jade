@@ -5,8 +5,7 @@ block header
 block content
 	.row.full--page
 		section.col.s12.m12
-			a.show-on-medium-and-down.button-collapse.show-on-large(href="#" data-activates="menu--sidebar")
-			#menu--sidebar.col.m6.l4.s10.side-nav.fixed
+			#menu--sidebar.side-nav.fixed
 				.user--control
 					.user--details
 						.user--avatar
@@ -15,38 +14,49 @@ block content
 				.channel--select
 					.channel--list
 						.channel--item
-							a(href="#") /commitments
+							a(href="/commitment.html") /commitments
 							span.counter 8
 						.channel--item
 							a(href="/asks.html") /asks
 							span.counter 2
-
-				section.category--items
-					header.category--title
+				
+				.channel--select
+					header.category--title 
 						p Teams
 						span.add--badge
-					.category--item
-						p Dhamira
-						span.menu--ellipsis
-					.category--item
-						p MonkeyPLanes
-						span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Dhamira
+							span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Monkey Planes
+							span.menu--ellipsis
 
-				section.category--items
-					header.category--title
+				.channel--select
+					header.category--title 
 						p Integrations
 						span.add--badge
-					.category--item
-						p Gmail
-						span.menu--ellipsis
-					.category--item
-						p Calendar
-						span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Gmail
+							span.menu--ellipsis
+					.channel--list
+						.channel--item
+							a(href="#") Calendar
+							span.menu--ellipsis
 				.logo
 			
 			.main--content
+
+				.mobile--header.hide-on-large-only
+					a.button-collapse.show-on-medium-and-down.hide-on-large-only(href="#" data-activates="menu--sidebar")
+					.mobile--heading.center.show-on-medium-and-down.hide-on-large-only /commitments
+					a#add--badge.show-on-small-and-down.hide-on-large-only.btn-floating.btn-large.waves-effect.waves-light
+						i.material-icons add
+
 				.container
-					.commitment--add
+					.commitment--add.hide-on-med-and-down
 						a.dropdown-button.btn(href="#" data-activates="add-commitment" data-beloworigin="true") PH
 							ul#add-commitment.dropdown-content
 								li.commitment--group one
