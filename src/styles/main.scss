@@ -414,6 +414,13 @@ a[data-activates="menu--sidebar"] {
   padding: 40px 0 10px;
 }
 
+.title--heading {
+  font-family: 'Avenir Medium';
+  font-size: 18px;
+  font-weight: 500;
+  padding: 60px 0 30px;
+}
+
 .assignment--list {
   padding: 40px 0;
 }
@@ -637,6 +644,33 @@ input.edit--date, input.edit--time {
   border: 1px solid #ececec;
   border-radius: 5px;
   padding: 0 10px;
+}
+
+input.edit--time {
+  color: #444;
+}
+
+.picker__box .picker__date-display {
+  display: none;
+}
+
+.picker__table .picker__day--outfocus {
+  display: block;
+  color: #ccc;
+  padding:.75rem 0;
+}
+
+.picker__table .picker__day.picker__day--today {
+  color: #50e3c2;
+}
+
+.picker__table .picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+  height: 35px;
+  width: 35px;
+  margin: 0 auto;
+  line-height: 12px;
+  background-color: #50e3c2;
+  border-radius: 4px;
 }
 
 input.edit--title {

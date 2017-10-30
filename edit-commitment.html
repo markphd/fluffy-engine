@@ -5,6 +5,7 @@
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="dist/css/materialize.min.css" rel="stylesheet"/>
     <link href="dist/css/main.css" rel="stylesheet"/>
+    <link href="dist/css/pikaday.css" rel="stylesheet"/>
     <link href="dist/css/emoji.css" rel="stylesheet"/>
   </head>
   <body>
@@ -50,7 +51,7 @@
         <div class="main--content">
           <div class="mobile--header hide-on-large-only"><a class="button-collapse show-on-medium-and-down hide-on-large-only" href="#" data-activates="menu--sidebar"></a></div>
           <div class="container">
-            <div class="section--heading show-on-large">Edit commitment</div>
+            <div class="title--heading show-on-large">Edit commitment</div>
             <div class="commitment--edit-form">
               <div class="commitment--input">
                 <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +67,7 @@
                     <path d="M1 9H0m4.015-6.257l-.63-.777M10.78 1.2l.225-.974m5.205 5.305l.899-.438m-.9 7.376l.9.438M10.779 16.8l.225.974m-6.989-2.517l-.63.777" stroke="#979797" stroke-linecap="round"></path>
                   </g>
                 </svg>
-                <input class="edit--date" type="date"/>
+                <input class="edit--date" id="datepicker" type="text"/>
                 <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <title>Time</title>
                   <g transform="translate(1 1)" stroke="#929292" stroke-width="2" fill="none" fill-rule="evenodd">
@@ -74,7 +75,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M7 5v2.857L8.5 9.5"></path>
                   </g>
                 </svg>
-                <input class="edit--time" type="number"/>
+                <input class="edit--time" type="text"/>
               </div>
               <div class="commitment--input">
                 <svg width="15" height="16" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg">
@@ -121,6 +122,9 @@
     </div>
     <script src="dist/scripts/jquery.min.js"></script>
     <script src="dist/scripts/materialize.min.js"></script>
+    <script src="dist/scripts/pikaday.js"></script>
+    <script src="dist/scripts/pikaday.jquery.js"></script>
+    <script src="dist/scripts/jquery.maskedinput.min.js"></script>
     <script src="dist/scripts/main.js"></script>
     <script src="dist/scripts/dragscroll.js"></script>
   </body>

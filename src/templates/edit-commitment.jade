@@ -52,7 +52,7 @@ block content
 					a.button-collapse.show-on-medium-and-down.hide-on-large-only(href="#" data-activates="menu--sidebar")
 
 				.container
-					.section--heading.show-on-large Edit commitment
+					.title--heading.show-on-large Edit commitment
 
 					.commitment--edit-form
 						.commitment--input
@@ -65,13 +65,13 @@ block content
 								g(transform="translate(1 1)" stroke-width="2" fill="none" fill-rule="evenodd")
 									circle(stroke="#929292" cx="9" cy="9" r="4")
 									path(d="M1 9H0m4.015-6.257l-.63-.777M10.78 1.2l.225-.974m5.205 5.305l.899-.438m-.9 7.376l.9.438M10.779 16.8l.225.974m-6.989-2.517l-.63.777" stroke="#979797" stroke-linecap="round")
-							input.edit--date(type="date")
+							input#datepicker.edit--date(type="text")
 							svg(width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
 								title Time
 								g(transform="translate(1 1)" stroke="#929292" stroke-width="2" fill="none" fill-rule="evenodd")
 									circle(cx="7" cy="7" r="7")
 									path(stroke-linecap="round" stroke-linejoin="round" d="M7 5v2.857L8.5 9.5")
-							input.edit--time(type="number")
+							input.edit--time(type="text")
 						.commitment--input
 							svg(width="15" height="16" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg")
 								path(d="M7.5 10c-3.218 0-5.916 1.943-6.492 4.635-.03.137.025.225-.051.221 4.283.192 8.803.192 13.086 0-.076.004-.021-.084-.05-.22C13.415 11.942 10.717 10 7.5 10zM10 3.5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0z" stroke="#929292" stroke-width="2" fill="none" fill-rule="evenodd")
@@ -100,6 +100,4 @@ block content
 					.edit--controls 
 							.edit--control-cancel Cancel
 							.edit--control-save Save
-
-
 
