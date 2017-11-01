@@ -33,7 +33,8 @@ $( document ).ready(function() {
             'Aaron Lloyd': 'dist/images/user-03.jpg'
           }
         var key = chip.tag;
-        $(this).children('.chip').append('<img src="' + data[key] + '">');
+        // $(this).children('.chip').last().text(key.split(' ')[0]); // uncomment if first name only
+        $(this).children('.chip').last().append('<img src="' + data[key] + '">');
     });
 });
 

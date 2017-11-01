@@ -695,10 +695,16 @@ input.edit--title {
   // border: 1px solid #00E2B7;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
-  padding: 0 1%;
+  padding: 0 2%;
   margin-left: 29px;
   margin-bottom: 5px;
   width: 425px;
+}
+
+.edit--assignee .chip {
+  margin-bottom: -2px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .edit--assignee.chips.focus {
