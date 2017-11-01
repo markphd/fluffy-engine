@@ -13,6 +13,28 @@ $( document ).ready(function() {
     var picker = new Pikaday({ field: $('#datepicker')[0], showDaysInNextAndPreviousMonths: true, enableSelectionDaysInNextAndPreviousMonths: true });
 
     $('#timepicker').timepicker({ 'scrollDefault': 'now' });
+
+    $('.edit--assignee').material_chip({
+        autocompleteOptions: {
+          data: {
+            'Kyle Robinson': 'dist/images/user-01.jpg',
+            'Rebecca Smith': 'dist/images/user-02.jpg',
+            'Aaron Lloyd': 'dist/images/user-03.jpg'
+          },
+          limit: Infinity,
+          minLength: 1
+        }
+    });
+
+    $('.chips').on('chip.add', function(e, chip){
+        var data = {
+            'Kyle Robinson': 'dist/images/user-01.jpg',
+            'Rebecca Smith': 'dist/images/user-02.jpg',
+            'Aaron Lloyd': 'dist/images/user-03.jpg'
+          }
+        var key = chip.tag;
+        $(this).children('.chip').append('<img src="' + data[key] + '">');
+    });
 });
 
 $( document ).on('focus.autoExpand', 'textarea.autoExpand', function(){

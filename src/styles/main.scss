@@ -695,9 +695,24 @@ input.edit--title {
   // border: 1px solid #00E2B7;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
-  padding: 5px 2% 0;
+  padding: 0 1%;
   margin-left: 29px;
+  margin-bottom: 5px;
   width: 425px;
+}
+
+.edit--assignee.chips.focus {
+  border: 1px solid #00E2B7;
+  box-shadow: none;
+}
+
+.chips .autocomplete-content {
+  position: absolute;
+  min-width: 400px;
+}
+
+.chips .chip.selected {
+  background-color: #00E2B7;
 }
 
 .select-wrapper span.caret {
