@@ -59,8 +59,12 @@ block content
 					.commitment--add.hide-on-med-and-down
 						a.dropdown-button.btn(href="#" data-activates="add-commitment" data-beloworigin="true") PH
 							ul#add-commitment.dropdown-content
-								li.commitment--group one
-								li.commitment--group two
+								li(data-group="Product Hackers").commitment--group
+									| Product Hackers
+									em.commitment--member-group PH
+								li(data-group="Google Advocates").commitment--group
+									| Google Advocates
+									em.commitment--member-group GA
 						textarea.autoExpand.commitment--item(rows='1' data-min-rows='1' placeholder="Add new commitment")
 
 					.commitment--list
