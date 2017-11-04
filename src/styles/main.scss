@@ -367,6 +367,17 @@ a[data-activates="menu--sidebar"] {
   width: 40px;
   display: block;
   text-align: center;
+  transition: 200ms;
+}
+
+.commitment--complete:hover {
+  background-color: #CACACA;
+  transition: 200ms;
+}
+
+.commitment--complete:active {
+  background-color: #12D6B0;
+  transition: 200ms;
 }
 
 .commitment--complete i {
