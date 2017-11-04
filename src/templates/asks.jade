@@ -58,8 +58,18 @@ block content
 					.commitment--add.hide-on-med-and-down
 						a.dropdown-button.btn(href="#" data-activates="add-commitment" data-beloworigin="true") PH
 							ul#add-commitment.dropdown-content
-								li.commitment--group one
-								li.commitment--group two
+								li(data-group="Product Hackers").commitment--group
+									| Product Hackers
+									em.commitment--member-group PH
+								li(data-group="Google Advocates").commitment--group
+									| Google dev team
+									em.commitment--member-group GA
+								li(data-group="Google Advocates").commitment--group
+									| Apple design
+									em.commitment--member-group 
+								li(data-group="Google Advocates").commitment--group
+									| Enron
+									em.commitment--member-group E
 						textarea.autoExpand.commitment--item(rows='1' data-min-rows='1' placeholder="Add new ask")
 
 					.section--heading INCOMING
@@ -78,7 +88,7 @@ block content
 							.ask--control
 								a.ask--accept.waves-effect.waves-light.btn Accept
 								a.ask--decline.waves-effect.waves-light.btn Decline
-								a.ask--modify Modify
+								a.ask--modify.waves-effect.waves-light.btn Modify
 						.ask--item
 							.ask--user
 								span.commitment--member.user-3
@@ -91,7 +101,7 @@ block content
 							.ask--control
 								a.ask--accept.waves-effect.waves-light.btn Accept
 								a.ask--decline.waves-effect.waves-light.btn Decline
-								a.ask--modify Modify
+								a.ask--modify.waves-effect.waves-light.btn Modify
 
 					.section--heading OUTGOING
 
