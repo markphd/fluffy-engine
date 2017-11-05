@@ -13,7 +13,7 @@ block content
 						span.user--menu-control
 				.channel--select
 					.channel--list
-						.channel--item
+						.channel--item.active
 							a(href="/commitment.html") /commitments
 							span.counter 8
 						.channel--item
@@ -63,8 +63,15 @@ block content
 									| Product Hackers
 									em.commitment--member-group PH
 								li(data-group="Google Advocates").commitment--group
-									| Google Advocates
+									| Google dev team
 									em.commitment--member-group GA
+								li(data-group="Google Advocates").commitment--group
+									| Apple design
+									em.commitment--member-group.team-1 
+								li(data-group="Google Advocates").commitment--group
+									| Enron
+									em.commitment--member-group E
+								
 						textarea.autoExpand.commitment--item(rows='1' data-min-rows='1' placeholder="Add new commitment")
 
 					.commitment--list

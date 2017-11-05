@@ -178,6 +178,10 @@ span.user--menu-control {
   background-color: rgba(255,255,255,0.19);
 }
 
+.channel--item:active, .channel--item.active {
+  background-color: rgba(255,255,255,.39);
+}
+
 span.counter {
   font-size: 11px;
   line-height: 22px;
@@ -312,6 +316,16 @@ em.commitment--member-group {
 .commitment--group {
   padding-left: 2%;
   line-height: 3.5rem !important;
+}
+
+.team-1 {
+  background-image: url('../images/team-01.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn:hover, .btn-large:hover, .btn:focus, .btn-large:focus, .btn-floating:focus {
+  background-color: #4C19CD;
 }
 
 a[data-activates="add-commitment"] {
@@ -794,12 +808,12 @@ span.caret::before {
 
 }
 
-.edit--range {
-
+.edit--range .dropdown-content li > span {
+  color: #000;
 }
 
-.edit--group {
-
+.edit--group .dropdown-content li > span {
+  color: #000;
 }
 
 .edit--controls {
