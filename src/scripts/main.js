@@ -36,6 +36,18 @@ $( document ).ready(function() {
         // $(this).children('.chip').last().text(key.split(' ')[0]); // uncomment if first name only
         $(this).children('.chip').last().append('<img src="' + data[key] + '">');
     });
+
+    $('#label--group-select').on('change', function(e) {
+        var team = e.target.value;
+
+        switch(team) {
+            case 'Apple Design':
+                console.log($('#label--group-select').closest('.label--group'));
+                break;
+            default:
+                console.log('Good!')
+        }
+    })
 });
 
 $( document ).on('focus.autoExpand', 'textarea.autoExpand', function(){
