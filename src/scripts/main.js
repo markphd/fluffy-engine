@@ -42,7 +42,16 @@ $( document ).ready(function() {
 
         switch(team) {
             case 'Apple Design':
-                console.log($('#label--group-select').closest('.label--group'));
+                $('.label--group').css({ backgroundImage: "url(dist/images/team-01.jpg)"})
+                break;
+            case 'Project Hackers':
+                $('.label--group').css({ backgroundImage: "url(dist/images/team-02.png)"})
+                break;
+            case 'Evron':
+                $('.label--group').css({ backgroundImage: "url(dist/images/team-03.png)"})
+                break;
+            case 'Google Dev Team':
+                $('.label--group').css({ backgroundImage: "url(dist/images/team-04.png)"})
                 break;
             default:
                 console.log('Good!')
