@@ -49,10 +49,11 @@ block content
 			
 			.main--content
 				.mobile--header.hide-on-large-only
-					a.button-collapse.show-on-medium-and-down.hide-on-large-only(href="#" data-activates="menu--sidebar")
-
+					a(href="/commitment.html").cancel--control
+					a(href="#").save--control SAVE
+					.mobile--heading.center.show-on-medium-and-down.hide-on-large-only Edit commitment
 				.container
-					.title--heading.show-on-large Edit commitment
+					.title--heading.show-on-large.hide-on-med-and-down Edit commitment
 
 					.commitment--edit-form
 						.commitment--input
@@ -96,7 +97,7 @@ block content
 									option(value="Google Dev Team") Google Dev Team
 									option(value="Apple Design" selected) Apple Design
 									option(value="Evron") Evron
-					.edit--controls 
+					.edit--controls.hide-on-med-and-down 
 							.edit--control-cancel Cancel
 							.edit--control-save Save
 

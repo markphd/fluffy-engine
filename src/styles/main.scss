@@ -200,9 +200,9 @@ span.counter {
 .add--badge, .menu--ellipsis {
   position: absolute;
   right: 50px;
-  top: 4px;
-  width: 14px;
-  height: 14px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
   text-align: center;
   color: #12D6B0;
   cursor: pointer;
@@ -896,15 +896,53 @@ svg.label--range {
     border: none;
   }
 
-  // input.edit--title, input.edit--date,
-  // input.edit--time, .edit--assignee, .edit--range, .edit--group {
-  //   width: 90%;
-  // }
+  .commitment--edit-form {
+    width: 350px;
+    border: none;
+    margin: 0 auto 20px;
+    padding-left: 10px;
+  }
 
-  // input.edit--date {
-  //   width: 90%;
-  //   float: left;
-  // }
+  input.edit--date {
+    margin-left: 6px;
+  }
+
+  .edit--assignee {
+    margin-left: 25px;  
+    width: 285px;
+  }
+
+  input.edit--title, input.edit--time, input.edit--date {
+    width: 260px;
+    padding-left: 15px;
+  }
+
+  .commitment--input svg {
+    clear: both;
+    margin-left: -3px;
+  }
+
+  .cancel--control {
+    position: relative;
+    top: 35px;
+    left: 15px;
+    display: block;
+    background-image: url(../images/back-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 30px;
+    width: 30px;
+  }
+
+  .save--control {
+    right: 30px;
+    position: absolute;
+    top: 40px;
+    color: #01D4A5;
+    font-family: 'Avenir Next Medium';
+    font-size: 16px;
+  }
+
 }
 
 @media #{$large-and-up} {
